@@ -1,0 +1,36 @@
+<a>fuyanxin</a>
+
+<br>
+<a>Dalian Neusoft University of Information</a>
+
+public static void main(String[] args) {
+        ArrayList<Student> array=new ArrayList<>();
+        while (true) {
+            System.out.println("---------欢迎---------");
+            System.out.println("1、 添加");
+            System.out.println("2、删除");
+            System.out.println("3、修改");
+            System.out.println("4、查看");
+            System.out.println("5、退出");
+            System.out.println("请输入：");
+            Scanner cs = new Scanner(System.in);
+            int a = cs.nextInt();
+            switch (a) {
+                case 1:
+                    glxttjxs(array);//添加的方法
+                    break;
+                case 2:
+                    glxtscxs(array);//删除的方法
+                    break;
+                case 3:
+                    glxtxgxs(array);//修改的方法
+                    break;
+                case 4:
+                    glxtckxs(array);//查看的方法
+                    break;
+                case 5:
+                    System.out.println("退出");
+                    System.exit(0);
+        }
+
+    }
